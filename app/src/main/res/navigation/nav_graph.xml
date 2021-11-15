@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_posts_fragment">
+
+    <fragment
+        android:id="@+id/nav_posts_fragment"
+        android:name="ru.netology.diplom.fragments.PostFragment"
+        android:label="@string/post_fragment_title"
+        tools:layout="@layout/fragments_posts">
+        <action
+            android:id="@+id/action_nav_posts_fragment_to_makeEditPostFragment"
+            app:destination="@id/makeEditPostFragment"
+            app:popUpTo="@id/nav_posts_fragment" />
+        <action
+            android:id="@+id/action_nav_posts_fragment_to_nav_page_fragment"
+            app:destination="@id/nav_page_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_events_fragment"
+        android:name="ru.netology.diplom.fragments.EventsFragment"
+        android:label="@string/events_fragment_title"
+        tools:layout="@layout/fragments_events">
+        <action
+            android:id="@+id/action_nav_events_fragment_to_makeEventFragment"
+            app:destination="@id/makeEventFragment"
+            app:popUpTo="@id/nav_events_fragment" />
+        <action
+            android:id="@+id/action_nav_events_fragment_to_nav_page_fragment"
+            app:destination="@id/nav_page_fragment" />
+        <action
+            android:id="@+id/action_nav_events_fragment_to_eventExhibitorFragment"
+            app:destination="@id/eventExhibitorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_page_fragment"
+        android:name="ru.netology.diplom.fragments.PagerFragment"
+        android:label="@string/page_fragment_title"
+        tools:layout="@layout/fragment_page">
+        <action
+            android:id="@+id/action_nav_page_fragment_to_nav_posts_fragment"
+            app:destination="@id/nav_posts_fragment"
+            app:popUpTo="@id/nav_posts_fragment" />
+        <argument
+            android:name="authorId"
+            android:defaultValue="-1L"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_nav_page_fragment_to_makeEditPostFragment"
+            app:destination="@id/makeEditPostFragment"
+            app:popUpTo="@id/nav_page_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeEditPostFragment"
+        android:name="ru.netology.diplom.fragments.MakePostFragment"
+        android:label="@string/make_post_fragment_title"
+        tools:layout="@layout/fragment_make_post" />
+    <fragment
+        android:id="@+id/logInFragment"
+        android:name="ru.netology.diplom.fragments.LoginFragments"
+        android:label="@string/sign_in_fragment_title"
+        tools:layout="@layout/fragment_log_in">
+        <action
+            android:id="@+id/action_logInFragment_to_registrFragment"
+            app:destination="@id/registrFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/registrFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_logInFragment_to_nav_posts_fragment"
+            app:destination="@id/nav_posts_fragment"
+            app:launchSingleTop="false"
+            app:popUpTo="@id/nav_posts_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrFragment"
+        android:name="ru.netology.diplom.fragments.RegisterFragment"
+        android:label="@string/sign_up_fragment_title"
+        tools:layout="@layout/fragment_registr">
+        <action
+            android:id="@+id/action_registrFragment_to_logInFragment"
+            app:destination="@id/logInFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/logInFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/makeEventFragment"
+        android:name="ru.netology.diplom.fragments.MakeEventFragment"
+        android:label="@string/make_event_fragment_title"
+        tools:layout="@layout/fragment_make_event" />
+    <fragment
+        android:id="@+id/nav_users_fragment"
+        android:name="ru.netology.diplom.fragments.UsersFragment"
+        android:label="@string/users_fragment_title"
+        tools:layout="@layout/fragment_users">
+        <action
+            android:id="@+id/action_usersFragment_to_nav_page_fragment"
+            app:destination="@id/nav_page_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/eventExhibitorFragment"
+        android:name="ru.netology.diplom.fragments.EventExhibitorFragment"
+        android:label="@string/event_exhibitor_fragment_tite">
+        <action
+            android:id="@+id/action_eventExhibitorFragment_to_nav_page_fragment"
+            app:destination="@id/nav_page_fragment" />
+        <argument
+            android:name="eventId"
+            app:argType="long" />
+    </fragment>
+</navigation>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:context=".fragments.CreateEventFragment">
+
+        <ImageView
+            android:id="@+id/iv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/iv_content_icon_description"
+            android:src="@drawable/ic_content_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/et_post_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:autofillHints="no"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_make_event_editText"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect|textAutoComplete"
+            android:minHeight="48dp"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@id/iv_content"
+            app:layout_constraintTop_toTopOf="@id/iv_content"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <View
+            android:id="@+id/group_choose_event_date"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?android:attr/selectableItemBackground"
+            app:layout_constraintBottom_toBottomOf="@id/iv_choose_date"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_choose_date" />
+
+        <ImageView
+            android:id="@+id/iv_choose_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:contentDescription="@string/iv_date_picker_icon_description"
+            android:src="@drawable/ic_calendar_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_post_content" />
+
+        <TextView
+            android:id="@+id/tv_event_date_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:hint="@string/tv_pick_event_date"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_choose_date"
+            app:layout_constraintStart_toEndOf="@id/iv_choose_date"
+            app:layout_constraintTop_toTopOf="@id/iv_choose_date" />
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/button_event_type_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_event_date_time"
+            app:singleSelection="true">
+
+            <Button
+                android:id="@+id/button_type_online"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/online_event_type_button" />
+
+            <Button
+                android:id="@+id/button_type_offline"
+                style="?attr/materialButtonOutlinedStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/offline_event_type_button" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+        <FrameLayout
+            android:id="@+id/layout_photo_case"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/button_event_type_group">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/image_attachment_contents_description"
+                android:scaleType="fitStart"
+                tools:ignore="ImageContrastCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_removePhoto"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|end"
+                app:icon="@drawable/ic_cancel_24"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </FrameLayout>
+
+        <View
+            style="@style/DividerHorizontal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@id/button_panel_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_photo_case"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <LinearLayout
+            android:id="@+id/button_panel_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_pickPhoto"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_photo_24dp"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_takePhoto"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_camera_24dp"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

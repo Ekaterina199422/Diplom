@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main_container_layout"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/main_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#3B00BCD4"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar.CustomFont"
+            app:popupTheme="@style/Widget.AppCompat.ActionBar"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+        <fragment
+            android:id="@+id/nav_host_fragment_case"
+            android:name="androidx.navigation.fragment.NavHostFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:defaultNavHost="true"
+            app:navGraph="@navigation/nav_graph" />
+
+    </LinearLayout>
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/button_app_bar"
+        android:layout_width="match_parent"
+        app:hideOnScroll="true"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/button_nav_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            app:menu="@menu/button_app" />
+
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+    <com.nambimobile.widgets.efab.ExpandableFabLayout
+        android:id="@+id/fab_make_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.nambimobile.widgets.efab.Overlay
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:overlay_orientation="portrait" />
+
+        <com.nambimobile.widgets.efab.ExpandableFab
+            android:id="@+id/expandable_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="30dp"
+            app:backgroundTint="@color/primary_light"
+            app:efab_icon="@drawable/ic_add_24"
+            app:efab_orientation="portrait" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/fab_add_post"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_posts_24"
+            app:fab_orientation="portrait"
+            app:label_text="@string/add_post_fab" />
+
+        <com.nambimobile.widgets.efab.FabOption
+            android:id="@+id/fab_add_event"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_events_24"
+            app:fab_orientation="portrait"
+            app:label_text="@string/add_event_fab" />
+
+    </com.nambimobile.widgets.efab.ExpandableFabLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

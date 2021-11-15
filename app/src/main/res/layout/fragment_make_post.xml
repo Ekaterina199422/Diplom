@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".fragments.MakePostFragment">
+
+        <EditText
+            android:id="@+id/et_post_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="no"
+            android:background="@android:color/transparent"
+            android:hint="@string/hint_make_post_editText"
+            android:inputType="textMultiLine|textCapSentences|textAutoCorrect|textAutoComplete"
+            android:padding="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="TextContrastCheck" />
+
+        <FrameLayout
+            android:id="@+id/layout_photo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/et_post_content">
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@string/image_attachment_contents_description"
+                android:scaleType="fitStart" />
+
+            <com.google.android.exoplayer2.ui.PlayerView
+                android:id="@+id/video_player_view"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_gravity="center_horizontal" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_removeMedia"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_gravity="top|end"
+                app:icon="@drawable/ic_cancel_24"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </FrameLayout>
+
+        <View
+            style="@style/DividerHorizontal"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toTopOf="@id/button_panel_layout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/layout_photo_container"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <LinearLayout
+            android:id="@+id/button_panel_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_pickPhoto"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_photo_24dp"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_takePhoto"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_camera_24dp"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_pickVideo"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_video_24"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_pickAudio"
+                style="@style/Widget.App.Button.IconOnly"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:icon="@drawable/ic_audiotrack_24"
+                app:iconTint="@android:color/darker_gray"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

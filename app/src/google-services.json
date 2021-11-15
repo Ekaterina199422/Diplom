@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "307721710736",
+    "project_id": "diplom-c443b",
+    "storage_bucket": "diplom-c443b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307721710736:android:a2ee1500b86b31bfd37c15",
+        "android_client_info": {
+          "package_name": "ru.netology.diplom"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307721710736-s0tf06f16i9241g4tbm7rqqd6dccfc5c.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjRPrjmrI2-Hnzgg95Aq-lVzSjOFNpLpg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307721710736-s0tf06f16i9241g4tbm7rqqd6dccfc5c.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

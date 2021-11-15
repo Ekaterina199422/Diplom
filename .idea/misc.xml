@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_add_circle_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_baseline_mood_bad_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_broken_file.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_delete_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_event_type_offline.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_pager_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_play_arrow_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/drawable/ic_video_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/dialog_fragment_make_job.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/event_list.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/exo_player.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_events_exhibitor.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_log_in.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_make_event.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_make_post.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_page.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_page_total.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_registr.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragment_users.xml" value="0.4" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragments_events.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/fragments_posts.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/item_loat_state.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/job_list.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/post_list.xml" value="0.16" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/layout/users_list.xml" value="0.152" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/menu/auth_app_manu.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/menu/button_app.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/menu/fragment_make_edite_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/menu/fragment_pager_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Desktop/Diplom/app/src/main/res/menu/list_menu.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/background_collaps_toolbar.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_add_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_audiotrack_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_baseline_more_vert_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_calendar_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_camera_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_cancel_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_content_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_event_exhibitor_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_event_type_online.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_events_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_exhibitor24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_like_24_dp.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_like_border_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_like_filled_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_pager_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_photo_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_posts_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_users_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/drawable/ic_video_24.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/font/caveant_regular.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/font/caveat_bolt.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/font/caveat_font.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/font/caveat_medium.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/font/caveat_semi_bolt.xml" value="0.1" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/dialog_fragment_make_job.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/event_list.xml" value="0.2" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/exo_player.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_events_exhibitor.xml" value="0.28935185185185186" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_log_in.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_make_event.xml" value="0.264" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_make_post.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_page.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_page_total.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_registr.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragment_users.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragments_events.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/fragments_posts.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/item_loat_state.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/job_list.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/nav.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/post_list.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/layout/users_list.xml" value="0.12158054711246201" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/menu/auth_app_manu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/menu/bottom_app.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/menu/button_app.xml" value="0.16203703703703703" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/menu/fragment_make_edite_menu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/menu/fragment_pager_menu.xml" value="0.19166666666666668" />
+        <entry key="..\:/Users/Ekaterina/Diplom/app/src/main/res/menu/list_menu.xml" value="0.19166666666666668" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
